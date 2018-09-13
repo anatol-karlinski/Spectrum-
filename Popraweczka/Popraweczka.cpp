@@ -88,7 +88,6 @@ void ConvertImage(int threadNr, string inputFile, string outputFile) {
 	// Obliczenie przesuniecia bitow ktore występuje w plikach BMP 24
 	int row_padded = (width * 3 + 3) & (~3);
 	unsigned char* data = new unsigned char[row_padded];
-	unsigned char temp;
 
 	// Stworzenie pustego pliku bmp o odpowiednich rozmiarach. Będziemy go wypelniac odpowiedznimi kolorami pozniej.
 	BmpImg bmpImage(width, height);
